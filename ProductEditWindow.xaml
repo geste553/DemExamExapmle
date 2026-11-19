@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp1.ProductEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Редактирование товара" Height="400" Width="400" WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <StackPanel>
+            <TextBlock Text="Артикул:"/>
+            <TextBox x:Name="TbArticle" Margin="0,0,0,10" Padding="5"/>
+
+            <TextBlock Text="Название:"/>
+            <TextBox x:Name="TbName" Margin="0,0,0,10" Padding="5"/>
+
+            <TextBlock Text="Цена:"/>
+            <TextBox x:Name="TbPrice" Margin="0,0,0,10" Padding="5"/>
+
+            <TextBlock Text="Количество на складе:"/>
+            <TextBox x:Name="TbQuantity" Margin="0,0,0,20" Padding="5"/>
+
+            <Button Content="Сохранить" Click="BtnSave_Click" Padding="10"/>
+        </StackPanel>
+    </Grid>
+</Window>
